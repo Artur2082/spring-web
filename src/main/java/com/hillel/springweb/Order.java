@@ -4,15 +4,16 @@ import com.hillel.springweb.Product;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Order {
     private int idOrder;
-    private LocalDate date;
+    private Date date;
     private double cost;
     private List<Product> products;
 
-    public Order(int idOrder, LocalDate date, double cost, List<Product> products) {
+    public Order(int idOrder, Date date, double cost, List<Product> products) {
         this.idOrder = idOrder;
         this.date = date;
         this.cost = cost;
@@ -29,11 +30,11 @@ public class Order {
         this.idOrder = idOrder;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
