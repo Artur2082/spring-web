@@ -22,12 +22,15 @@ public class OrderRepository {
         }
         return ord;
     }
-    public Order addOrder(Order order){
+    public List<Order> addOrder(Order order){
         orderList.add(order);
-        return order;
+        return orderList;
     }
     public List<Order> getAll() {
         return orderList;
     }
 
+    public List<Order> getOrderList() {
+        return orderList;
+    }
 }

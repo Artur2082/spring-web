@@ -13,9 +13,9 @@ public class OrderService {
         this.orderRepository = orderRepository;
     }
 
-    public Order create(Order order){
+    public List<Order> create(Order order){
         this.orderRepository.addOrder(order);
-        return order;
+        return orderRepository.getOrderList();
     }
 
     public Order findById (Integer id){
