@@ -1,6 +1,6 @@
-package com.hillel.springweb.root;
+package com.hillel.springweb;
 
-import com.hillel.springweb.root.Product;
+import com.hillel.springweb.Product;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -12,11 +12,11 @@ public class Order {
     private double cost;
     private List<Product> products;
 
-    public Order(int idOrder, LocalDate date) {
+    public Order(int idOrder, LocalDate date, double cost, List<Product> products) {
         this.idOrder = idOrder;
         this.date = date;
-        this.cost = products.stream().mapToDouble(Product::getCost).sum();
-        this.products = new ArrayList<>();
+        this.cost = cost;
+        this.products = products;
     }
 
     public int getIdOrder() {
@@ -41,6 +41,10 @@ public class Order {
 
     public void setCost(double cost) {
         this.cost = cost;
+    }
+
+    public List<Product> getProducts() {
+        return products;
     }
 
     @Override

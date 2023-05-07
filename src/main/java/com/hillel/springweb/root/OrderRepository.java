@@ -1,10 +1,12 @@
-package com.hillel.springweb;
+package com.hillel.springweb.root;
 
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+import com.hillel.springweb.Order;
+import org.springframework.stereotype.Repository;
+
 
 import java.util.ArrayList;
 import java.util.List;
+@Repository
 public class OrderRepository {
     private List<Order> orderList;
 
@@ -28,11 +30,4 @@ public class OrderRepository {
         return orderList;
     }
 
-    public List<Order> getOrderList() {
-        return orderList;
-    }
-
-    public void setOrderList(List<Order> orderList) {
-        this.orderList = orderList;
-    }
 }

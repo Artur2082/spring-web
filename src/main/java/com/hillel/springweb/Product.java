@@ -1,4 +1,5 @@
-package com.hillel.springweb.root;
+package com.hillel.springweb;
+
 
 public class Product {
     private int id;
