@@ -18,8 +18,8 @@ public class ProductRepository {
         return productList;
     }
 
-public Product addProduct(Product product){
+public List<Product> addProduct(Product product){
         productList.add(product);
-        return product;
+        return productList;
 }
 }
