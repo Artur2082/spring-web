@@ -18,6 +18,8 @@ public class Order {
         this.cost = cost;
         this.products = products;
     }
+    public Order() {
+    }
 
     public int getIdOrder() {
         return idOrder;
