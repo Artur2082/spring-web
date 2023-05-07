@@ -1,6 +1,5 @@
 package com.hillel.springweb.servlet;
 
-import com.hillel.springweb.Order;
 import com.hillel.springweb.Product;
 import com.hillel.springweb.root.ProductService;
 import com.hillel.springweb.servlet.mapper.ProductMapper;

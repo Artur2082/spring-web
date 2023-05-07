@@ -2,7 +2,6 @@ package com.hillel.springweb.root;
 
 import com.hillel.springweb.Product;
 import org.springframework.stereotype.Repository;
-
 import java.util.ArrayList;
 import java.util.List;
 
