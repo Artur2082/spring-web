@@ -13,9 +13,7 @@ public class ProductRepository {
     public ProductRepository() {
         this.productList = new ArrayList<>();
     }
-    public Product createProd(Product product){
-        return product;
-    }
+
     public List<Product> getAll(){
         return productList;
     }

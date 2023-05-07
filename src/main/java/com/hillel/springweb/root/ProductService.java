@@ -14,7 +14,8 @@ public class ProductService {
     }
 
     public Product create(Product product){
-        return this.productRepository.createProd(product);
+        this.productRepository.addProduct(product);
+        return product;
     }
 
     public List<Product> findAll(){
